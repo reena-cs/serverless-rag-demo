@@ -113,7 +113,7 @@ class ApiGw_Stack(Stack):
                           'OPENSEARCH_ENDPOINT': collection_endpoint,
                           'MODEL_PATH': env_params['model_path'],
                           'REGION': region,
-                          'MAX_TOKENS': "2000",
+                          'MAX_TOKENS': env_params['max_tokens']['sagemaker_endpoint_name'],
                           'TEMPERATURE': "0.9",
                           'TOP_P': "0.6",
                           'SAGEMAKER_ENDPOINT': sagemaker_endpoint_name,

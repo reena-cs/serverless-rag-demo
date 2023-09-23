@@ -67,7 +67,15 @@
       "falcon_40b_sagemaker_endpoint": "falcon-40b-endpoint",
       "falcon_180b_sagemaker_endpoint": "falcon-180b-endpoint",
       "sagemaker_role_name": "sagemaker_llm_role_dev",
-      "model_path": "/var/task/sentencetransformers/" 
+      "model_path": "/var/task/sentencetransformers/",
+      "max_tokens": {
+        "llama2-7b-endpoint": "2000",
+        "llama2-13b-endpoint": "8000",
+        "llama2-70b-endpoint": "2000",
+        "falcon-7b-endpoint": "2000",
+        "falcon-40b-endpoint": "2000",
+        "falcon-180b-endpoint": "2000"
+        }
     },
     "qa": {
       "ecr_repository_name": "lambda_rag_repo_qa",
@@ -84,7 +92,15 @@
       "falcon_40b_sagemaker_endpoint": "falcon-40b-endpoint",
       "falcon_180b_sagemaker_endpoint": "falcon-180b-endpoint",
       "sagemaker_role_name": "sagemaker_llm_role_qa",
-      "model_path": "/var/task/sentencetransformers/"
+      "model_path": "/var/task/sentencetransformers/",
+      "max_tokens": {
+        "llama2-7b-endpoint": "2000",
+        "llama2-13b-endpoint": "8000",
+        "llama2-70b-endpoint": "2000",
+        "falcon-7b-endpoint": "2000",
+        "falcon-40b-endpoint": "2000",
+        "falcon-180b-endpoint": "2000"
+        }
     },
     "sandbox": {
       "ecr_repository_name": "lambda_rag_repo_sandbox",
@@ -101,7 +117,15 @@
       "falcon_40b_sagemaker_endpoint": "falcon-40b-endpoint",
       "falcon_180b_sagemaker_endpoint": "falcon-180b-endpoint",
       "sagemaker_role_name": "sagemaker_llm_role_sandbox",
-      "model_path": "/var/task/sentencetransformers/"
+      "model_path": "/var/task/sentencetransformers/",
+      "max_tokens": {
+        "llama2-7b-endpoint": "2000",
+        "llama2-13b-endpoint": "8000",
+        "llama2-70b-endpoint": "2000",
+        "falcon-7b-endpoint": "2000",
+        "falcon-40b-endpoint": "2000",
+        "falcon-180b-endpoint": "2000"
+        }
     }
   }
 }
